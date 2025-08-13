@@ -1,7 +1,7 @@
 <template>
   <article class="apartment-card">
     <div class="apartment-card__media">
-      <div class="apartment-card__thumb">Фото</div>
+      <img class="apartment-card__thumb" src="/images/placeholder.svg" alt="Фото квартиры" />
     </div>
     <div class="apartment-card__body">
       <h3 class="apartment-card__title">2‑комн. квартира, 56 м²</h3>
@@ -30,8 +30,8 @@
   overflow: hidden;
   background: $color-white;
 
-  &__media { width: 100%; aspect-ratio: 16 / 10; background: #f2f3f5; }
-  &__thumb { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #9aa0a6; }
+  &__media { width: 100%; aspect-ratio: 16 / 10; background: #f2f3f5; overflow: hidden; }
+  &__thumb { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   &__body { padding: 12px; display: grid; gap: 8px; }
 
