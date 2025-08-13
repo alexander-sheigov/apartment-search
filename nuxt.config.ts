@@ -1,31 +1,25 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // Основные настройки
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
-  // App конфигурация
   app: {
     head: {
-      title: 'Поиск квартир',
+      title: 'Квартиры',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Приложение для поиска квартир с фильтрацией' }
+        { name: 'description', content: 'Поиск квартир по количеству комнат, цене и площади' }
       ]
     }
   },
   
-  // Модули
   modules: [
     '@pinia/nuxt',
     '@nuxt/fonts'
   ],
 
-  // CSS
   css: ['~/assets/styles/main.scss'],
 
-  // Конфигурация шрифтов
   fonts: {
     families: [
       {
@@ -67,7 +61,6 @@ export default defineNuxtConfig({
     ]
   },
 
-  // Настройки сборщика
   vite: {
     css: {
       preprocessorOptions: {

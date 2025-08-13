@@ -1,0 +1,36 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.app {
+  &__container {
+    width: 100%;
+    max-width: $container-max-width;
+    margin: 0 auto;
+    
+    padding: {
+      top: $container-padding-y-base;
+      bottom: $container-padding-y-base;
+      left: $container-padding-x-base;
+      right: $container-padding-x-base;
+    }
+
+    @include media-min($breakpoint-md) {
+      padding: {
+        top: $container-padding-y-md;
+        bottom: $container-padding-y-md;
+        left: $container-padding-x-md;
+        right: $container-padding-x-md;
+      }
+    }
+
+    @include media-min($breakpoint-lg) {
+      padding: {
+        top: $container-padding-y-lg;
+        bottom: $container-padding-y-lg;
+        left: $container-padding-x-lg;
+        right: $container-padding-x-lg;
+      }
+    }
+  }
+}
+
