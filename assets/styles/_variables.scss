@@ -1,6 +1,18 @@
-// =================================================================
-// ПЕРЕМЕННЫЕ
-// =================================================================
-
-// Типографика
 $font-family-base: 'PT Root UI', sans-serif;
+
+$color-white: #FFFFFF;
+$color-text: #0B1739;
+$color-accent: #3EB57C;
+$color-gray-200: #E2E2E2;
+
+$breakpoint-md: 960px;
+$breakpoint-lg: 1440px;
+
+$container-max-width: 1440px;
+$container-padding-x-base: 24px;
+$container-padding-x-md: 54px;
+$container-padding-x-lg: 80px;
+
+$container-padding-y-base: 24px;
+$container-padding-y-md: 48px;
+$container-padding-y-lg: 96px;
